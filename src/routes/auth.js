@@ -1,16 +1,12 @@
 const express = require("express")
 const router=express.Router()
 
-router.post("/",(req,res) => {
-    
+router.post("/login",(req,res) => {
     console.log(req.body)
-    if(req.body.name=="devana")
-    {
-        res.send(req.body)
-    }
-    else
-    {
-        res.send("Enter valid name")
-    }
+    res.send("Login page")
 })
-module.exports=router;
+router.post("/register",(req,res) => {
+    console.log(req.body)
+    res.send("Register page")
+})
+module.exports=router

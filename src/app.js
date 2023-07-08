@@ -12,9 +12,10 @@ app.use(express.json())
 //     console.log(req.body)
 // })
 const AuthRoute=require("./routes/auth")
-app.use("/",AuthRoute)
+app.use("/auth",AuthRoute)
 
-
+const homeRoute=require("./routes/home")
+app.use("/",homeRoute)
 
 
 app.listen(8000,()=>{
