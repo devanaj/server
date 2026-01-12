@@ -8,7 +8,7 @@ POST request is made to the "/login" endpoint, the callback function `(req, res)
 executed. */
 router.post("/login",(req,res) => {
     console.log(req.body)
-    res.send("Login pageeeee")
+    res.send("Login page")
 })
 router.post("/register",(req,res) => {
     console.log(req.body)
