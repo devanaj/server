@@ -19,5 +19,5 @@ app.use("/",homeRoute)
 
 
 app.listen(8000,()=>{
-    console.log("Server listening at 8000");
+    console.log("Server listeninggggg at 8000");
 })
